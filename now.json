@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "testproject",
+    "builds": [{
+        "src": "testproject/wsgi.py",
+        "use": "@ardnt/now-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+	
+	{
+        	"src": "/(.*)",
+        	"dest": "testproject/wsgi.py"
+     	}
+    ]
+}
