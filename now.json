@@ -7,7 +7,10 @@
         "config": { "maxLambdaSize": "15mb" }
     }],
     "routes": [
-	
+	{
+		"src": "/static/(.*)",
+		"dest": "/static/$1"
+	},	
 	{
         	"src": "/(.*)",
         	"dest": "testproject/wsgi.py"
