@@ -6,10 +6,10 @@
 
 # Install pip
 #curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
+#python3 get-pip.py
 
 # Install project requirements
-pip install -r requirements.txt
+#pip install -r requirements.txt
 
 # Build staticfiles
-python manage.py collectstatic
+python3 manage.py collectstatic
